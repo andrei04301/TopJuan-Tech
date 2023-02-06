@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDashboard extends NavigationDrawer {
+    // creating object of ViewPager
+    ViewPager mViewPager;
 
     // images array
     int[] images = {R.drawable.food, R.drawable.coffee, R.drawable.tourist, R.drawable.hospital,

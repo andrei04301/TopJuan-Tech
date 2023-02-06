@@ -43,8 +43,8 @@ class SliderAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, final int position) {
-        // inflating the item.xml
-        View itemView = mLayoutInflater.inflate(R.layout.activity_user_dashboard, container, false);
+        // inflating the slider image
+        View itemView = mLayoutInflater.inflate(R.layout.activity_slider_item, container, false);
 
         // referencing the image view from the item.xml file
         ImageView imageView = (ImageView) itemView.findViewById(R.id.imageViewMain);

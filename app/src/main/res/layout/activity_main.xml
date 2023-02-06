@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/powder_blue">
+    android:background="@color/powder_blue"
+    android:textAlignment="center">
     <!--    <View-->
     <!--        android:layout_width="wrap_content"-->
     <!--        android:layout_height="match_parent"-->
@@ -18,7 +19,8 @@
         android:layout_height="match_parent"
         android:fillViewport="true"
         tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="-26dp">
+        tools:layout_editor_absoluteY="-26dp"
+        >
 
         <ImageView
             android:id="@+id/applogo"
@@ -38,7 +40,8 @@
             android:background="@drawable/cust_but"
             android:fontFamily="@font/poppins"
             android:text="Register as Manager"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
 
         <Button
             android:id="@+id/btn_signupUser"

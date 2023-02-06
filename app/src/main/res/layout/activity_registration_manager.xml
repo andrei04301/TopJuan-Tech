@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationManager"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:background="@color/powder_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <RelativeLayout
+                android:id="@+id/rl_wrapper"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="565dp"
+                android:fillViewport="true"
+                tools:layout_editor_absoluteX="26dp"
+                tools:layout_editor_absoluteY="-26dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Register"
+                    android:textColor="@color/bright_blue"
+                    android:textSize="44sp"
+                    app:layout_constraintBottom_toTopOf="@+id/editFirstNameManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <EditText
+                    android:id="@+id/editFirstNameManager"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/custom_textfield"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/editLastNameManager"
+                    app:layout_constraintEnd_toEndOf="@+id/editLastNameManager"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editLastNameManager"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.964"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editLastNameManager"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_textfield"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/editEmailManager"
+                    app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editEmailManager"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/custom_textfield"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/editCellphoneManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.495"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginBottom="8dp"
+                    android:paddingBottom="13dp"
+                    tools:ignore="MissingClass" />
+
+
+                <EditText
+                    android:id="@+id/editCellphoneManager"
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="160dp"
+                    android:layout_marginTop="290dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/custom_textfield"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/editPassword1Manager"
+                    app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editPassword1Manager"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/custom_textfield"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintBottom_toTopOf="@+id/editPassword2Manager"
+                    app:layout_constraintEnd_toEndOf="@+id/editCellphoneManager"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editCellphoneManager"
+                    tools:ignore="MissingConstraints" />
+
+                <EditText
+                    android:id="@+id/editPassword2Manager"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="410dp"
+                    android:background="@drawable/custom_textfield"
+                    android:drawablePadding="10dp"
+                    android:ems="10"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="13dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="13dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:layout_constraintEnd_toEndOf="@+id/editPassword1Manager"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/editPassword1Manager"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="479dp" />
+
+                <TextView
+                    android:id="@+id/alreadyHaveAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="520dp"
+                    android:gravity="center"
+                    android:text="Already Have an Account?"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+
+                    app:layout_constraintEnd_toEndOf="@+id/btnContinueManager"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="611dp" />
+
+                <Button
+                    android:id="@+id/btnContinueManager"
+                    android:layout_width="296dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="470dp"
+                    android:background="@drawable/cust_but"
+                    android:text="Continue"
+                    android:textColor="@color/white"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="57dp"
+                    tools:layout_editor_absoluteY="566dp" />
+            </RelativeLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

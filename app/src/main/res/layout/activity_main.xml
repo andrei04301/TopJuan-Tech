@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/powder_blue">
+    <!--    <View-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:background="#48000000"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="-26dp">
+
+        <ImageView
+            android:id="@+id/applogo"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-55dp"
+            android:gravity="center"
+            android:src="@drawable/logo" />
+
+        <Button
+            android:id="@+id/btn_signupManager"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="540dp"
+            android:background="@drawable/cust_but"
+            android:fontFamily="@font/poppins"
+            android:text="Register as Manager"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_signupUser"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="480dp"
+            android:background="@drawable/cust_but"
+            android:fontFamily="@font/poppins"
+            android:text="Register as User"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="600dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/cust_but"
+            android:fontFamily="@font/poppins"
+            android:text="Login"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

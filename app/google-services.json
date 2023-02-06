@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "311728725560",
+    "firebase_url": "https://topjuantech-ojt-default-rtdb.firebaseio.com",
+    "project_id": "topjuantech-ojt",
+    "storage_bucket": "topjuantech-ojt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311728725560:android:7275446dc621a585af50cd",
+        "android_client_info": {
+          "package_name": "com.example.ojt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311728725560-e2q2rps5dunm887qgl472jun49ashe81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3e6rfD3iA4PpsNjt5tIPXDXcXhjvVfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311728725560-e2q2rps5dunm887qgl472jun49ashe81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:311728725560:android:3a071a0b585db747af50cd",
+        "android_client_info": {
+          "package_name": "com.example.topjuantech_ojt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "311728725560-e2q2rps5dunm887qgl472jun49ashe81.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3e6rfD3iA4PpsNjt5tIPXDXcXhjvVfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "311728725560-e2q2rps5dunm887qgl472jun49ashe81.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationEstablishment"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="27dp"
+        android:background="@color/powder_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="481dp"
+            android:fillViewport="true"
+            tools:layout_editor_absoluteX="26dp"
+            tools:layout_editor_absoluteY="-26dp">
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/editPassword2Manager"-->
+            <!--                android:layout_width="300dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/custom_textfield"-->
+            <!--                android:drawablePadding="10dp"-->
+            <!--                android:ems="10"-->
+            <!--                android:hint="Confirm Password"-->
+            <!--                android:inputType="textPassword"-->
+            <!--                android:paddingLeft="20dp"-->
+            <!--                android:paddingTop="13dp"-->
+            <!--                android:paddingRight="20dp"-->
+            <!--                android:paddingBottom="13dp"-->
+            <!--                android:textColor="@color/white"-->
+            <!--                app:layout_constraintEnd_toEndOf="@+id/editLocationLat"-->
+            <!--                app:layout_constraintHorizontal_bias="0.0"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/editLocationLat"-->
+            <!--                tools:ignore="MissingConstraints"-->
+            <!--                tools:layout_editor_absoluteY="471dp" />-->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Register"
+                android:textColor="@color/bright_blue"
+                android:textSize="44sp"
+                app:layout_constraintBottom_toTopOf="@+id/editNameEst"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/editNameEst"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/custom_textfield"
+                android:ems="10"
+                android:hint="Establishment Name"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/editTypeEst"
+                app:layout_constraintEnd_toEndOf="@+id/editTypeEst"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/editTypeEst"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editTypeEst"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_textfield"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Type of Establishment"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/editEmailManager"
+                app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editEmailManager"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_textfield"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Foods"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/editLocationLong"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editLocationLong"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/custom_textfield"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Longitude"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/editLocationLat"
+                app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/editLocationLat"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="350dp"
+                android:background="@drawable/custom_textfield"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="Latitude"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/editLocationLong"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/editLocationLong"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="467dp" />
+
+            <Button
+                android:id="@+id/btnRegisterEst"
+                android:layout_width="296dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="410dp"
+                android:background="@drawable/cust_but"
+                android:text="Register"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/editLocationLat"
+                app:layout_constraintStart_toStartOf="@+id/editLocationLat"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="557dp" />
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnSignup"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="40dp"-->
+            <!--                android:background="@drawable/cust_but"-->
+            <!--                android:text="Sign in"-->
+            <!--                android:textColor="@color/white"-->
+
+            <!--            app:backgroundTint="@color/material_dynamic_neutral0"-->
+            <!--            app:layout_constraintEnd_toEndOf="@+id/editPassword2"-->
+            <!--            app:layout_constraintHorizontal_bias="0.0"-->
+            <!--            app:layout_constraintStart_toStartOf="@+id/editPassword2"-->
+            <!--            app:layout_constraintTop_toBottomOf="@+id/editPassword2" />-->
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

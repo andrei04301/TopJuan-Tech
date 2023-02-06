@@ -236,26 +236,18 @@
             </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
-    <!--    <RelativeLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="200dp"-->
-    <!--        >-->
 
-    <!--        <com.denzcoskun.imageslider.ImageSlider-->
-    <!--            android:id="@+id/slider"-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="400dp"-->
-    <!--            android:layout_marginStart="20dp"-->
-    <!--            android:layout_marginTop="20dp"-->
-    <!--            android:layout_marginEnd="20dp"-->
-    <!--            android:layout_marginBottom="20dp"-->
-    <!--            app:auto_cycle="true"-->
-    <!--            app:corner_radius="20"-->
-    <!--            app:delay="0"-->
-    <!--            app:error_image="@color/powder_blue"-->
-    <!--            app:period="3000"-->
-    <!--            app:placeholder="@color/black" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <!--    </RelativeLayout>-->
+        <!-- viewpager to show images -->
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPagerMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
 </LinearLayout>
 

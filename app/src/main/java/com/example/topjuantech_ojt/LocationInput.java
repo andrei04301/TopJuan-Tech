@@ -33,8 +33,7 @@ public class LocationInput extends AppCompatActivity {
         spinRegion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                //Define City Spinner but we will populate the options through the selected state
-                spinCity = findViewById(R.id.region);
+                spinCity = findViewById(R.id.city_district);
 
                 chosenRegion = spinRegion.getSelectedItem().toString();
 
@@ -42,85 +41,85 @@ public class LocationInput extends AppCompatActivity {
                 if (parentID == R.id.region) {
                     switch (chosenRegion) {
                         case "Select Your Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_def_region, R.layout.spin);
                             break;
                         case "Region I - Ilocos Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region1_city, R.layout.spin);
                             break;
                         case "Region II - Cagayan Valley":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region2_city, R.layout.spin);
                             break;
                         case "Region III - Central Luzon":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region3_city, R.layout.spin);
                             break;
                         case "Region IVA - CALABARZON":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region4A_city, R.layout.spin);
                             break;
                         case "NCR - National Capital Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_NCR_city, R.layout.spin);
                             break;
                         case "CAR - Cordillera Administrative Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_CAR_city, R.layout.spin);
                             break;
                         case "MIMAROPA Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_MIMAROPA_city, R.layout.spin);
                             break;
                         case "Region V - Bicol Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region5_city, R.layout.spin);
                             break;
                         case "Region VI - Western Visayas":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region6_city, R.layout.spin);
                             break;
                         case "Region VII - Central Visayas":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region7_city, R.layout.spin);
                             break;
                         case "Region VIII - Eastern Visayas":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region8_city, R.layout.spin);
                             break;
                         case "Region IX - Zamboanga Peninsula":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region9_city, R.layout.spin);
                             break;
                         case "Region X - Northern Mindanao":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region10_city, R.layout.spin);
                             break;
                         case "Region XI - Davao Region":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region11_city, R.layout.spin);
                             break;
                         case "Region XII - SOCCKSARGEN":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region12_city, R.layout.spin);
                             break;
                         case "Region XIII - Caraga":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_region13_city, R.layout.spin);
                             break;
                         case "BARMM - Bangsamoro Autonomous Region in Muslim Mindanao":
-                            adapterRegion = ArrayAdapter.createFromResource(parent.getContext(),
+                            adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_BARRM_city, R.layout.spin);
                             break;
                         default:  break;
                     }
-                    adapterRegion.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     // Specify the layout to use when the list of choices appears
-                    spinRegion.setAdapter(adapterRegion);
-                    spinRegion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                    adapterCity.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                    spinCity.setAdapter(adapterCity);
+                    spinCity.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                            chosenRegion = spinRegion.getSelectedItem().toString();
+                            chosenCity = spinCity.getSelectedItem().toString();
                         }
 
                         @Override

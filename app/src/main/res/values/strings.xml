@@ -1,18 +1,96 @@
 <resources>
     <string name="app_name">TopJuanTech_OJT</string>
-    <string-array name="arr_highlands">
-        <item>Select Your State</item><item>Luzon</item><item>Visayas</item><item>Mindanao</item>
+<!--array of Regions-->
+    <string-array name="arr_region">
+        <item>Select Your Region</item><item>Region I - Ilocos Region</item><item>Region II - Cagayan Valley</item>
+        <item>Region III - Central Luzon</item><item>Region IVA - CALABARZON</item><item>NCR - National Capital Region</item>
+        <item>CAR - Cordillera Administrative Region</item><item>MIMAROPA Region</item><item>Region V - Bicol Region</item>
+        <item>Region VI - Western Visayas</item><item>Region VII - Central Visayas</item><item>Region VIII - Eastern Visayas</item>
+        <item>Region IX - Zamboanga Peninsula</item><item>Region X - Northern Mindanao</item><item>Region XI - Davao Region</item>
+        <item>Region XII - SOCCKSARGEN</item><item>Region XIII - Caraga</item><item>BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</item>
     </string-array>
+    <!--Default Text of Regions-->
     <string-array name="arr_def_region">
-        <item>Select Your Region</item></string-array>
-    <string-array name="arr_luzon_region">
-        <item>Select Your Region</item><item>Region I</item><item>Region II</item><item>Region II</item><item>Region IV</item><item>Region V</item>
-        <item>Region VI</item><item>Region VII</item><item>Region VIII</item>
+        <item>Select Your Region</item>
     </string-array>
-    <string-array name="arr_region1_city">
-        <item>Select Your Region</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
-    </string-array>
+    <!--Default Text of Regions-->
     <string-array name="arr_def_city">
-        <item>Select Your City</item></string-array>
+        <item>Select Your Province/City</item>
+    </string-array>
+    <!--Array of Province/City in Region 1-->
+    <string-array name="arr_region1_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item>
+        <item>La Union</item><item>Pangasinan</item><item>Pangasinan-Dagupan</item>
+        <item>Pangasinan-San Carlos</item><item>Pangasinan - Alaminos</item><item>Pangasinan - Urdaneta</item>
+        <item>Ilocos Norte - Laoag</item><item>Ilocos Sur - Vigan</item><item>Ilocos Sur - Candon</item>
+        <item>La Union - San Fernando</item>
+    </string-array>
+    <!--Array of Province/City in Region 2-->
+    <string-array name="arr_region2_city">
+        <item>Select Your Province/City</item><item>Batanes</item><item>Cagayan</item>
+        <item>Isabela</item><item>Quirino</item><item>Nueva Vizcaya</item>
+        <item>Isabela - Cauayan</item><item>Isabela - Ilagan</item><item>ISabela - Santiago</item>
+        <item>Cagayan - Tuguegarao</item>
+    </string-array>
+    <!--Array of Province/City in Region 3-->
+    <string-array name="arr_region3_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 4A-->
+    <string-array name="arr_region4A_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in NCR-->
+    <string-array name="arr_NCR_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in CAR-->
+    <string-array name="arr_CAR_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in MIMAROPA-->
+    <string-array name="arr_MIMAROPA_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region V-->
+    <string-array name="arr_region5_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 6-->
+    <string-array name="arr_region6_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 7-->
+    <string-array name="arr_region7_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 8-->
+    <string-array name="arr_region8_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 9-->
+    <string-array name="arr_region9_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 10-->
+    <string-array name="arr_region10_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 11-->
+    <string-array name="arr_region11_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 12-->
+    <string-array name="arr_region12_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in Region 13-->
+    <string-array name="arr_region13_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
+    <!--Array of Province/City in BARRM-->
+    <string-array name="arr_BARRM_city">
+        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+    </string-array>
 
 </resources>

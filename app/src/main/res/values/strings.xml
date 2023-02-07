@@ -1,18 +1,34 @@
 <resources>
     <string name="app_name">TopJuanTech_OJT</string>
     <string-array name="arr_highlands">
-        <item>Select Your State</item><item>Luzon</item><item>Visayas</item><item>Mindanao</item>
+        <item>Select Your State</item>
+        <item>Luzon</item>
+        <item>Visayas</item>
+        <item>Mindanao</item>
     </string-array>
     <string-array name="arr_def_region">
-        <item>Select Your Region</item></string-array>
+        <item>Select Your Region</item>
+    </string-array>
     <string-array name="arr_luzon_region">
-        <item>Select Your Region</item><item>Region I</item><item>Region II</item><item>Region II</item><item>Region IV</item><item>Region V</item>
-        <item>Region VI</item><item>Region VII</item><item>Region VIII</item>
+        <item>Select Your Region</item>
+        <item>Region I</item>
+        <item>Region II</item>
+        <item>Region II</item>
+        <item>Region IV</item>
+        <item>Region V</item>
+        <item>Region VI</item>
+        <item>Region VII</item>
+        <item>Region VIII</item>
     </string-array>
     <string-array name="arr_region1_city">
-        <item>Select Your Region</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Region</item>
+        <item>Ilocos Norte</item>
+        <item>Ilocos Sur</item>
+        <item>La Union</item>
+        <item>Pangasinan</item>
     </string-array>
     <string-array name="arr_def_city">
-        <item>Select Your City</item></string-array>
+        <item>Select Your City</item>
+    </string-array>
 
 </resources>

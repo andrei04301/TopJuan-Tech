@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class LocationInput extends AppCompatActivity {
 
     private String chosenHighlands, chosenCity, chosenRegion;
-    private TextView tvStateSpinner, tvDistrictSpinner;
+    private TextView txtHighlands, txtRegion, txtCity;
     private Spinner spinHighlands, spinCity, spinRegion;
     private ArrayAdapter<CharSequence> adapterHighlands, adapterCity, adapterRegion;
 
@@ -60,7 +60,7 @@ public class LocationInput extends AppCompatActivity {
                             break;
                         default:  break;
                     }
-                    adapterRegion.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);     // Specify the layout to use when the list of choices appears
+                    adapterRegion.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     spinRegion.setAdapter(adapterRegion);
                     spinRegion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                         @Override
@@ -74,7 +74,6 @@ public class LocationInput extends AppCompatActivity {
                     });
                 }
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
@@ -82,28 +81,29 @@ public class LocationInput extends AppCompatActivity {
         });
         Button submitButton;                                //To display the selected State and District
         submitButton = findViewById(R.id.button_submit);
-        tvStateSpinner = findViewById(R.id.txt_highlands);
-        tvDistrictSpinner = findViewById(R.id.txt_region);
-
+        txtHighlands = findViewById(R.id.txt_highlands);
+        txtRegion = findViewById(R.id.txt_region);
+        txtCity = findViewById(R.id.txt_region);
         submitButton.setOnClickListener(v -> {
-            if (chosenHighlands.equals("Select Your State")) {
+            if (chosenHighlands.equals("Select Your Highlands")) {
                 Toast.makeText(LocationInput.this, "Please select your Highlands from the list", Toast.LENGTH_LONG).show();
-                tvStateSpinner.setError("Highlands is required!");      //To set error on TextView
-                tvStateSpinner.requestFocus();
-            } else if (chosenRegion.equals("Select Your District")) {
+                txtHighlands.setError("Highlands is required!");      //To set error on TextView
+                txtHighlands.requestFocus();
+            } else if (chosenRegion.equals("Select Your Region")) {
                 Toast.makeText(LocationInput.this, "Please select your Region from the list", Toast.LENGTH_LONG).show();
-                tvDistrictSpinner.setError("Region is required!");
-                tvDistrictSpinner.requestFocus();
-                tvStateSpinner.setError(null);                      //To remove error from stateSpinner
+                txtRegion.setError("Region is required!");
+                txtRegion.requestFocus();
+                txtRegion.setError(null);                      //To remove error from stateSpinner
             }
-            else if (chosenCity.equals("Select Your District")) {
+            else if (chosenCity.equals("Select Your City/District")) {
                 Toast.makeText(LocationInput.this, "Please select your City from the list", Toast.LENGTH_LONG).show();
-                tvDistrictSpinner.setError("City/District is required!");
-                tvDistrictSpinner.requestFocus();
-                tvStateSpinner.setError(null);
+                txtCity.setError("City/District is required!");
+                txtCity.requestFocus();
+                txtCity.setError(null);
             }else {
-                tvStateSpinner.setError(null);
-                tvDistrictSpinner.setError(null);
+                txtHighlands.setError(null);
+                txtRegion.setError(null);
+                txtCity.setError(null);
                 Toast.makeText(LocationInput.this, "Selected State: "+chosenHighlands+"\nSelected District: "+chosenRegion, Toast.LENGTH_LONG).show();
             }
         });

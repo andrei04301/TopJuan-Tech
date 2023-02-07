@@ -9,14 +9,17 @@
         <item>Region IX - Zamboanga Peninsula</item><item>Region X - Northern Mindanao</item><item>Region XI - Davao Region</item>
         <item>Region XII - SOCCKSARGEN</item><item>Region XIII - Caraga</item><item>BARMM - Bangsamoro Autonomous Region in Muslim Mindanao</item>
     </string-array>
+
     <!--Default Text of Regions-->
     <string-array name="arr_def_region">
         <item>Select Your Region</item>
     </string-array>
+
     <!--Default Text of Regions-->
     <string-array name="arr_def_city">
         <item>Select Your Province/City</item>
     </string-array>
+
     <!--Array of Province/City in Region 1-->
     <string-array name="arr_region1_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item>
@@ -25,6 +28,7 @@
         <item>Ilocos Norte - Laoag City</item><item>Ilocos Sur - Vigan City</item><item>Ilocos Sur - Candon City</item>
         <item>La Union - San Fernando City</item>
     </string-array>
+
     <!--Array of Province/City in Region 2-->
     <string-array name="arr_region2_city">
         <item>Select Your Province/City</item><item>Batanes</item><item>Cagayan</item>
@@ -32,6 +36,7 @@
         <item>Isabela - Cauayan City</item><item>Isabela - Ilagan City</item><item>Isabela - Santiago City</item>
         <item>Cagayan - Tuguegarao City</item>
     </string-array>
+
     <!--Array of Province/City in Region 3-->
     <string-array name="arr_region3_city">
         <item>Select Your Province/City</item><item>Aurora</item><item>Bataan</item>
@@ -43,24 +48,43 @@
         <item>Pampanga - San Fernando</item><item>Tarlac - Tarlac City</item><item>Zambales - Olongapo City</item>
         <item>Nueva Ecija - San Jose City</item>
     </string-array>
+
     <!--Array of Province/City in Region 4A-->
     <string-array name="arr_region4A_city">
         <item>Select Your Province/City</item><item>Cavite</item><item>Laguna</item>
         <item>Batangas</item><item>Rizal</item><item>Quezon</item>
         <item>Batangas - Batangas City</item><item>Batangas - Lipa City</item><item>Batangas - Tanauan City</item>
+        <item>Cavite - Bacoor City</item><item>Cavite - Cavite City</item><item>Cavite - Dasmarinas City</item>
+        <item>Cavite - Imus City</item><item>Cavite - Tagaytay City</item><item>Cavite - Trece Martires City</item>
+        <item>Laguna - Binan City</item><item>Laguna - Cabuyao City</item><item>Laguna - San Pablo City</item>
+        <item>Laguna - Santa Rosa City</item><item>Quezon - Lucena City</item><item>Quezon - Tayabas City</item>
+        <item>Rizal - Antipolo City</item><item>Laguna - Calamba City</item>
     </string-array>
+
+    <!--Array of Province/City in Region 4B-->
+    <string-array name="arr_MIMAROPA_city">
+        <item>Select Your Province/City</item><item>Occidental Mindoro</item><item>Oriental Mindoro</item>
+        <item>Marinduque</item><item>Romblon</item><item>Palawan</item>
+        <item>Oriental Mindoro - Calapan City</item><item>Palawan - Puerto Prinsesa City</item>
+    </string-array>
+
     <!--Array of Province/City in NCR-->
     <string-array name="arr_NCR_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Metro Manila - Caloocan City</item><item>Metro Manila - Las Pinas City</item>
+        <item>Metro Manila - Makati City</item><item>Metro Manila - Malabon City</item><item>Metro Manila - Manila City</item>
+        <item>Metro Manila - Marikina City</item><item>Metro Manila - Muntinlupa City</item><item>Metro Manila - Navotas City</item>
+        <item>Metro Manila - Paranaque City</item><item>Metro Manila - Pasay City</item><item>Metro Manila - Pasig City</item>
+        <item>Metro Manila - Quezon City</item><item>Metro Manila - San Juan City</item><item>Metro Manila - Taguig City</item>
+        <item>Metro Manila - Valenzuela City</item>
     </string-array>
+
     <!--Array of Province/City in CAR-->
     <string-array name="arr_CAR_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
     </string-array>
-    <!--Array of Province/City in MIMAROPA-->
-    <string-array name="arr_MIMAROPA_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
-    </string-array>
+
+
+
     <!--Array of Province/City in Region V-->
     <string-array name="arr_region5_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>

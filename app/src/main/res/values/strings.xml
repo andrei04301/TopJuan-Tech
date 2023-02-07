@@ -20,25 +20,34 @@
     <!--Array of Province/City in Region 1-->
     <string-array name="arr_region1_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item>
-        <item>La Union</item><item>Pangasinan</item><item>Pangasinan-Dagupan</item>
-        <item>Pangasinan-San Carlos</item><item>Pangasinan - Alaminos</item><item>Pangasinan - Urdaneta</item>
-        <item>Ilocos Norte - Laoag</item><item>Ilocos Sur - Vigan</item><item>Ilocos Sur - Candon</item>
-        <item>La Union - San Fernando</item>
+        <item>La Union</item><item>Pangasinan</item><item>Pangasinan - Dagupan City</item>
+        <item>Pangasinan - San Carlos City</item><item>Pangasinan - Alaminos City</item><item>Pangasinan - Urdaneta City </item>
+        <item>Ilocos Norte - Laoag City</item><item>Ilocos Sur - Vigan City</item><item>Ilocos Sur - Candon City</item>
+        <item>La Union - San Fernando City</item>
     </string-array>
     <!--Array of Province/City in Region 2-->
     <string-array name="arr_region2_city">
         <item>Select Your Province/City</item><item>Batanes</item><item>Cagayan</item>
         <item>Isabela</item><item>Quirino</item><item>Nueva Vizcaya</item>
-        <item>Isabela - Cauayan</item><item>Isabela - Ilagan</item><item>ISabela - Santiago</item>
-        <item>Cagayan - Tuguegarao</item>
+        <item>Isabela - Cauayan City</item><item>Isabela - Ilagan City</item><item>Isabela - Santiago City</item>
+        <item>Cagayan - Tuguegarao City</item>
     </string-array>
     <!--Array of Province/City in Region 3-->
     <string-array name="arr_region3_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Aurora</item><item>Bataan</item>
+        <item>Bulacan</item><item>Nueva Ecija</item><item>Pampanga</item>
+        <item>Tarlac</item><item>Zambales</item><item>Bataan - Balanga City</item>
+        <item>Bulacan - Malolos City</item><item>Bulacan - Meycauayan City</item><item>Bulacan - San Jose del Monte City</item>
+        <item>Nueva Ecija - Cabanatuan City</item><item>Neuva Ecija - Gapan City</item><item>Nueva Ecija - Munoz City</item>
+        <item>Nueva Ecija - Palayan City</item><item>Pampanga - Angeles City</item><item>Pampanga - Mabalacat City</item>
+        <item>Pampanga - San Fernando</item><item>Tarlac - Tarlac City</item><item>Zambales - Olongapo City</item>
+        <item>Nueva Ecija - San Jose City</item>
     </string-array>
     <!--Array of Province/City in Region 4A-->
     <string-array name="arr_region4A_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Cavite</item><item>Laguna</item>
+        <item>Batangas</item><item>Rizal</item><item>Quezon</item>
+        <item>Batangas - Batangas City</item><item>Batangas - Lipa City</item><item>Batangas - Tanauan City</item>
     </string-array>
     <!--Array of Province/City in NCR-->
     <string-array name="arr_NCR_city">

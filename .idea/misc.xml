@@ -28,17 +28,25 @@
         <entry key="..\:/Users/Andre/AndroidStudioProjects/OJT_GalguerraReynancia2023/app/src/main/res/layout/activity_user_dashboard.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/OJT_GalguerraReynancia2023/app/src/main/res/layout/header.xml" value="0.16845025762980578" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/OJT_GalguerraReynancia2023/app/src/main/res/menu/menu.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/drawable/cust_but.xml" value="0.2395" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2345" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2345" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.2" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_admin_navigation.xml" value="0.1109375" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_forgot_password.xml" value="0.346875" />
-        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_location_input.xml" value="0.4" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_location_input.xml" value="0.2" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_login.xml" value="0.3625" />
-        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_main.xml" value="0.346875" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.25" />
-        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_establishment.xml" value="0.346875" />
-        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_manager.xml" value="0.346875" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_establishment.xml" value="0.2" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_manager.xml" value="0.2" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_user.xml" value="0.2" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_slider_item.xml" value="0.3625" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_user_dashboard.xml" value="0.3625" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/spin.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/menu/admin_menu.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/menu/menu.xml" value="0.1109375" />
+        <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuanTech_OJT/app/src/main/res/drawable-v24/cust_but.xml" value="0.137" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuanTech_OJT/app/src/main/res/drawable-v24/custom_textfield.xml" value="0.1535" />
         <entry key="..\:/Users/Andre/AndroidStudioProjects/TopJuanTech_OJT/app/src/main/res/layout/activity_forgot_password.xml" value="0.4" />
@@ -58,9 +66,6 @@
         <entry key="..\:/Users/itsga/AndroidStudioProjects/OJT_GalguerraReynancia/app/src/main/res/layout/activity_registration_user.xml" value="0.22" />
         <entry key="..\:/Users/itsga/AndroidStudioProjects/OJT_GalguerraReynancia/app/src/main/res/layout/activity_sign_in_number.xml" value="0.1" />
         <entry key="..\:/Users/itsga/AndroidStudioProjects/OJT_GalguerraReynancia/app/src/main/res/layout/activity_sign_in_verification.xml" value="0.22" />
-        <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_location_input.xml" value="0.25" />
-        <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_establishment.xml" value="0.22" />
-        <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_registration_manager.xml" value="0.209375" />
         <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_slider_adapter.xml" value="0.209375" />
         <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_slider_item.xml" value="0.209375" />
         <entry key="..\:/Users/itsga/AndroidStudioProjects/TopJuan-Tech/app/src/main/res/layout/activity_user_dashboard.xml" value="0.209375" />

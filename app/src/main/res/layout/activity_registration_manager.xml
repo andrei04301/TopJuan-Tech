@@ -210,21 +210,21 @@
                     tools:layout_editor_absoluteY="566dp"
                     android:layout_below="@+id/editPassword2Manager"
                     />
-                <TextView
-                    android:id="@+id/alreadyHaveAccount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="130dp"
-                    android:layout_marginTop="5dpdp"
-                    android:gravity="center"
-                    android:text="Already Have an Account?"
-                    android:textColor="@color/black"
-                    android:textSize="17sp"
-                    app:layout_constraintEnd_toEndOf="@+id/btnContinueManager"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="611dp"
-                    android:layout_below="@+id/btnContinueManager"
-                    />
+<!--                <TextView-->
+<!--                    android:id="@+id/alreadyHaveAccount"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginLeft="130dp"-->
+<!--                    android:layout_marginTop="5dpdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="Already Have an Account?"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="17sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="@+id/btnContinueManager"-->
+<!--                    tools:ignore="MissingConstraints"-->
+<!--                    tools:layout_editor_absoluteY="611dp"-->
+<!--                    android:layout_below="@+id/btnContinueManager"-->
+<!--                    />-->
             </RelativeLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>

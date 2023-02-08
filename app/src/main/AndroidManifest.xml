@@ -19,9 +19,7 @@
         <activity
             android:name=".City"
             android:exported="false" />
-        <activity
-            android:name=".LocationInput"
-            android:exported="false" />
+
         <activity
             android:name=".SliderAdapter"
             android:exported="false" />

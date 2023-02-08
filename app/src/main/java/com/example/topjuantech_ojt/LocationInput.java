@@ -2,6 +2,7 @@ package com.example.topjuantech_ojt;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -12,31 +13,43 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 public class LocationInput extends AppCompatActivity {
 
-    private String  chosenCity, chosenRegion;
-    private TextView txtRegion, txtCity, txtBarangay, txtLong, txttLat;
-    private Spinner  spinCity, spinRegion;
-    private ArrayAdapter<CharSequence>  adapterCity, adapterRegion;
-//    private EditText etBarangay, etLong, etLat;
+    private String chosenCity, chosenRegion, barangay, longi, lat;
+    private TextView txtRegion, txtCity, txtBarangay, txtLong, txtLat;
+    private Spinner spinCity, spinRegion;
+    private ArrayAdapter<CharSequence> adapterCity, adapterRegion;
+    FirebaseAuth mAuth;
+    FirebaseUser mUser;
+    ProgressDialog progressDialog;
+    FirebaseFirestore fStore;
+    DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_location_input);
 
+        progressDialog = new ProgressDialog(this);
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
+        fStore= FirebaseFirestore.getInstance();
+
         spinRegion = findViewById(R.id.region);
-        adapterRegion = ArrayAdapter.createFromResource(this,
-                R.array.arr_region, R.layout.spin);
+        adapterRegion = ArrayAdapter.createFromResource(this, R.array.arr_region, R.layout.spin);
         adapterRegion.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinRegion.setAdapter(adapterRegion);
         spinRegion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 spinCity = findViewById(R.id.city_district);
-
                 chosenRegion = spinRegion.getSelectedItem().toString();
-
                 int parentID = parent.getId();
                 if (parentID == R.id.region) {
                     switch (chosenRegion) {
@@ -112,7 +125,8 @@ public class LocationInput extends AppCompatActivity {
                             adapterCity = ArrayAdapter.createFromResource(parent.getContext(),
                                     R.array.arr_BARRM_city, R.layout.spin);
                             break;
-                        default:  break;
+                        default:
+                            break;
                     }
                     adapterCity.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                     spinCity.setAdapter(adapterCity);
@@ -131,30 +145,61 @@ public class LocationInput extends AppCompatActivity {
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-
             }
         });
-        Button submitButton;                                //To display the selected State and District
+        Button submitButton;
         submitButton = findViewById(R.id.button_submit);
         txtRegion = findViewById(R.id.txt_region);
         txtCity = findViewById(R.id.txt_district);
-//        txtBarangay = findViewById(R.id.txt);
+        txtBarangay = findViewById(R.id.txt_barangay);
+        txtLong = findViewById(R.id.txt_long);
+        txtLat = findViewById(R.id.txt_lat);
+        barangay = txtBarangay.getText().toString();
+        longi = txtLong.getText().toString();
+        lat = txtLat.getText().toString();
 
-        submitButton.setOnClickListener(v -> {
-            if (chosenRegion.equals("Select Your Region")) {
-                Toast.makeText(LocationInput.this, "Please select your Region from the list", Toast.LENGTH_LONG).show();
-                txtRegion.setError("Region is required");      //To set error on TextView
-                txtRegion.requestFocus();
-            } else if (chosenCity.equals("Select Your Province/City")) {
-                Toast.makeText(LocationInput.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
-                txtCity.setError("Province/City is required!");
-                txtCity.requestFocus();
-                txtRegion.setError(null);                      //To remove error from stateSpinner
-            }else {
-                txtRegion.setError(null);
-                txtCity.setError(null);
-                Toast.makeText(LocationInput.this, "Selected Region: "+chosenRegion+"\nSelected Province/City: "+chosenCity, Toast.LENGTH_LONG).show();
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PerformAuth();
             }
         });
+    }
+
+    private void PerformAuth() {
+        if (chosenRegion.equals("Select Your Region")) {
+            Toast.makeText(LocationInput.this, "Please select your Region from the list", Toast.LENGTH_LONG).show();
+            txtRegion.setError("Region is required");      //To set error on TextView
+            txtRegion.requestFocus();
+        } else if (chosenCity.equals("Select Your Province/City")) {
+            Toast.makeText(LocationInput.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
+            txtCity.setError("Province/City is required!");
+            txtCity.requestFocus();
+            txtRegion.setError(null);
+        } else if (barangay.isEmpty()) {
+            Toast.makeText(LocationInput.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
+            txtBarangay.setError("Province/City is required!");
+            txtBarangay.requestFocus();
+        } else if (longi.isEmpty()) {
+            Toast.makeText(LocationInput.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
+            txtLong.setError("Province/City is required!");
+            txtLong.requestFocus();
+        } else if (lat.isEmpty()) {
+            Toast.makeText(LocationInput.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
+            txtLat.setError("Province/City is required!");
+            txtLat.requestFocus();
+        } else {
+            txtRegion.setError(null);
+            txtCity.setError(null);
+            txtBarangay.setError(null);
+            txtLong.setError(null);
+            txtLat.setError(null);
+            Toast.makeText(LocationInput.this, "Selected Region: " + chosenRegion + "\nSelected Province/City: " + chosenCity, Toast.LENGTH_LONG).show();
+            progressDialog.setMessage("Please wait...");
+            progressDialog.setTitle("Registration");
+            progressDialog.setCanceledOnTouchOutside(false);
+            progressDialog.show();
+
+        }
     }
 }

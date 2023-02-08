@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:paddingTop="10dp"
+            android:title="Establishment Registration"
+            android:id="@+id/estReg"
+            />
+        <item
+            android:title="Sample 2"
+            android:id="@+id/btnSignup"/>
+        <item
+            android:title="Sample 3"
+            android:id="@+id/btnReset"/>
+    </group>
+
+</menu>

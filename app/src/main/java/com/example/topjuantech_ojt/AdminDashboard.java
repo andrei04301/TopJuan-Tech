@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class AdminDashboard extends AppCompatActivity {
+public class AdminDashboard extends AdminNavigation {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

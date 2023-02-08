@@ -20,16 +20,13 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RegistrationEstablishment extends AppCompatActivity {
-    private EditText estNameEditText;
-    private EditText estTypeEditText;
-    private EditText managerEmailEditText;
-    private EditText estLocEditText;
-    private EditText estLatEditText;
+    private EditText estName,estType,estContact;
     private Button btnRegisterEst;
     private String chosenCity, chosenRegion, barangay, longi, lat;
     private TextView txtRegion, txtCity, txtBarangay, txtLong, txtLat;
     private Spinner spinCity, spinRegion;
     private ArrayAdapter<CharSequence> adapterCity, adapterRegion;
+    private String establishment, type, contact;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
     ProgressDialog progressDialog;
@@ -40,12 +37,6 @@ public class RegistrationEstablishment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_establishment);
-
-        estNameEditText = (EditText) findViewById(R.id.editNameEst);
-        estTypeEditText = (EditText) findViewById(R.id.editTypeEst);
-        managerEmailEditText = (EditText) findViewById(R.id.editEmailManager);
-        estLocEditText = (EditText) findViewById(R.id.editLocationLong);
-        estLatEditText = (EditText) findViewById(R.id.editLocationLat);
 
         Button btnRegisterEst = (Button) findViewById(R.id.btnRegisterEst);
         progressDialog = new ProgressDialog(this);
@@ -160,12 +151,18 @@ public class RegistrationEstablishment extends AppCompatActivity {
             }
         });
         Button submitButton;
-        submitButton = findViewById(R.id.btnRegisterEst);
+        estName =findViewById(R.id.editNameEst);
+        estType =findViewById(R.id.editTypeEst);
+        estContact =findViewById(R.id.editContactNumber);
         txtRegion = findViewById(R.id.txt_region);
         txtCity = findViewById(R.id.txt_district);
         txtBarangay = findViewById(R.id.editBarangay);
         txtLong = findViewById(R.id.editLocationLong);
         txtLat = findViewById(R.id.editLocationLat);
+        submitButton = findViewById(R.id.btnRegisterEst);
+        establishment = estName.getText().toString();
+        type = estType.getText().toString();
+        contact = estContact.getText().toString();
         barangay = txtBarangay.getText().toString();
         longi = txtLong.getText().toString();
         lat = txtLat.getText().toString();
@@ -200,7 +197,22 @@ public class RegistrationEstablishment extends AppCompatActivity {
             Toast.makeText(RegistrationEstablishment.this, "Please select your Province/City from the list", Toast.LENGTH_LONG).show();
             txtLat.setError("Province/City is required!");
             txtLat.requestFocus();
+        } else if (establishment.isEmpty()) {
+            Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment Name", Toast.LENGTH_LONG).show();
+            estName.setError("Establishment Name is required!");
+            estName.requestFocus();
+        } else if (type.isEmpty()) {
+            Toast.makeText(RegistrationEstablishment.this, "Please input the type of your Establishment", Toast.LENGTH_LONG).show();
+            estType.setError("Type is required!");
+            estType.requestFocus();
+        } else if (contact.isEmpty()) {
+            Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment's Contact Number", Toast.LENGTH_LONG).show();
+            txtLong.setError("Contact Number is required!");
+            txtLong.requestFocus();
         } else {
+            estName.setError(null);
+            estType.setError(null);
+            estContact.setError(null);
             txtRegion.setError(null);
             txtCity.setError(null);
             txtBarangay.setError(null);

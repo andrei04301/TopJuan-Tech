@@ -9,59 +9,50 @@
 
     <View
         android:id="@+id/topView"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="27dp"
         android:background="@color/powder_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view3"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@drawable/wave4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topView" />
 
     <androidx.cardview.widget.CardView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
         android:background="@color/white"
+        android:layout_margin="20dp"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
+
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="556dp"
-            android:fillViewport="true"
-            tools:layout_editor_absoluteX="-190dp"
-            tools:layout_editor_absoluteY="35dp">
+            android:layout_height="wrap_content">
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
                 android:fontFamily="@font/poppins"
                 android:text="Signup"
                 android:textColor="@color/bright_blue"
-                android:textSize="44sp"
-                tools:ignore="MissingConstraints" />
+                android:textSize="44sp" />
 
             <EditText
                 android:id="@+id/editFirstName"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="110dp"
+                android:layout_marginRight="35dp"
                 android:background="@drawable/custom_textfield"
                 android:ems="10"
                 android:hint="First Name"
@@ -74,12 +65,18 @@
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="54dp"
                 tools:layout_editor_absoluteY="181dp" />
+
             <EditText
                 android:id="@+id/editLastName"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/editFirstName"
+                android:layout_alignStart="@+id/editFirstName"
+                android:layout_alignEnd="@+id/editFirstName"
+                android:layout_marginStart="0dp"
                 android:layout_marginLeft="35dp"
-                android:layout_marginTop="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="1dp"
                 android:background="@drawable/custom_textfield"
                 android:drawablePadding="10dp"
                 android:ems="10"
@@ -98,8 +95,13 @@
                 android:id="@+id/editEmail"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/editLastName"
+                android:layout_alignStart="@+id/editLastName"
+                android:layout_alignEnd="@+id/editLastName"
+                android:layout_marginStart="0dp"
                 android:layout_marginLeft="35dp"
-                android:layout_marginTop="230dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"
                 android:background="@drawable/custom_textfield"
                 android:drawablePadding="10dp"
                 android:ems="10"
@@ -119,17 +121,22 @@
                 android:id="@+id/ccp"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editEmail"
+                android:layout_marginStart="0dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="290dp"
                 android:layout_marginBottom="8dp"
                 android:paddingBottom="13dp"
                 tools:ignore="MissingClass" />
+
             <EditText
                 android:id="@+id/editCellphone"
                 android:layout_width="175dp"
                 android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/editEmail"
                 android:layout_marginLeft="160dp"
                 android:layout_marginTop="290dp"
+                android:layout_marginEnd="0dp"
                 android:background="@drawable/custom_textfield"
                 android:drawablePadding="10dp"
                 android:ems="10"
@@ -144,12 +151,17 @@
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="54dp"
                 tools:layout_editor_absoluteY="363dp" />
+
             <EditText
                 android:id="@+id/editPassword1"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/ccp"
+                android:layout_alignEnd="@+id/editCellphone"
+                android:layout_marginStart="0dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="350dp"
+                android:layout_marginEnd="0dp"
                 android:background="@drawable/custom_textfield"
                 android:drawablePadding="10dp"
                 android:ems="10"
@@ -164,12 +176,17 @@
                 tools:ignore="MissingConstraints"
                 tools:layout_editor_absoluteX="54dp"
                 tools:layout_editor_absoluteY="422dp" />
+
             <EditText
                 android:id="@+id/editPassword2"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/editPassword1"
+                android:layout_alignEnd="@+id/editPassword1"
+                android:layout_marginStart="0dp"
                 android:layout_marginLeft="35dp"
                 android:layout_marginTop="410dp"
+                android:layout_marginEnd="0dp"
                 android:background="@drawable/custom_textfield"
                 android:drawablePadding="10dp"
                 android:ems="10"
@@ -189,8 +206,10 @@
                 android:id="@+id/alreadyHaveAccount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btnSignup"
                 android:layout_marginLeft="140dp"
-                android:layout_marginTop="520dp"
+                android:layout_marginTop="510dp"
+                android:layout_marginEnd="-3dp"
                 android:gravity="center"
                 android:text="Already Have an Account?"
                 android:textColor="@color/black"
@@ -203,8 +222,9 @@
                 android:id="@+id/btnSignup"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
+                android:layout_below="@+id/editPassword2"
                 android:layout_marginLeft="35dp"
-                android:layout_marginTop="470dp"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/cust_but"
                 android:text="Sign in"
                 android:textColor="@color/white"

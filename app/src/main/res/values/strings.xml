@@ -80,15 +80,19 @@
 
     <!--Array of Province/City in CAR-->
     <string-array name="arr_CAR_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Abra</item><item>Apayao</item>
+        <item>Benguet</item><item>Ifugao</item><item>Kalinga</item>
+        <item>Mountain Province</item><item>Benguet - Baguio City</item><item>Kalinga - Tabuk City</item>
     </string-array>
-
-
 
     <!--Array of Province/City in Region V-->
     <string-array name="arr_region5_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
     </string-array>
+
+
+
+
     <!--Array of Province/City in Region 6-->
     <string-array name="arr_region6_city">
         <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>

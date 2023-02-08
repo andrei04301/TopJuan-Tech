@@ -124,11 +124,11 @@ public class Login extends AppCompatActivity {
                 Log.d("TAG","onSuccess: " + documentSnapshot.getData());
 
                 if(documentSnapshot.getString("isUser")!= null){
-                    startActivity(new Intent(getApplicationContext(),RegistrationEstablishment.class));
+                    startActivity(new Intent(getApplicationContext(),UserDashboard.class));
                     finish();
                 }
                 if(documentSnapshot.getString("isAdmin")!= null){
-                    startActivity(new Intent(getApplicationContext(),RegistrationEstablishment.class));
+                    startActivity(new Intent(getApplicationContext(),AdminDashboard.class));
                     finish();
                 }
             }

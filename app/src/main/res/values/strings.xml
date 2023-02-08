@@ -22,50 +22,45 @@
 
     <!--Array of Province/City in Region 1-->
     <string-array name="arr_region1_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item>
-        <item>La Union</item><item>Pangasinan</item><item>Pangasinan - Dagupan City</item>
-        <item>Pangasinan - San Carlos City</item><item>Pangasinan - Alaminos City</item><item>Pangasinan - Urdaneta City </item>
-        <item>Ilocos Norte - Laoag City</item><item>Ilocos Sur - Vigan City</item><item>Ilocos Sur - Candon City</item>
+        <item>Select Your Province/City</item><item>Pangasinan - Dagupan City</item><item>Pangasinan - San Carlos City</item>
+        <item>Pangasinan - Alaminos City</item><item>Pangasinan - Urdaneta City </item><item>Ilocos Norte - Laoag City</item>
+        <item>Ilocos Norte - Batac City</item><item>Ilocos Sur - Vigan City</item><item>Ilocos Sur - Candon City</item>
         <item>La Union - San Fernando City</item>
     </string-array>
 
     <!--Array of Province/City in Region 2-->
     <string-array name="arr_region2_city">
-        <item>Select Your Province/City</item><item>Batanes</item><item>Cagayan</item>
-        <item>Isabela</item><item>Quirino</item><item>Nueva Vizcaya</item>
-        <item>Isabela - Cauayan City</item><item>Isabela - Ilagan City</item><item>Isabela - Santiago City</item>
-        <item>Cagayan - Tuguegarao City</item>
+        <item>Select Your Province/City</item><item>Isabela - Cauayan City</item><item>Isabela - Ilagan City</item>
+        <item>Isabela - Santiago City</item><item>Cagayan - Tuguegarao City</item><item>Nueva Vizcaya - Bayombong City</item>
+        <item>Quirino - Cabarroguis</item>
     </string-array>
 
     <!--Array of Province/City in Region 3-->
     <string-array name="arr_region3_city">
-        <item>Select Your Province/City</item><item>Aurora</item><item>Bataan</item>
-        <item>Bulacan</item><item>Nueva Ecija</item><item>Pampanga</item>
-        <item>Tarlac</item><item>Zambales</item><item>Bataan - Balanga City</item>
+        <item>Select Your Province/City</item><item>Aurora - Baler</item><item>Bataan - Balanga City</item>
         <item>Bulacan - Malolos City</item><item>Bulacan - Meycauayan City</item><item>Bulacan - San Jose del Monte City</item>
         <item>Nueva Ecija - Cabanatuan City</item><item>Neuva Ecija - Gapan City</item><item>Nueva Ecija - Munoz City</item>
-        <item>Nueva Ecija - Palayan City</item><item>Pampanga - Angeles City</item><item>Pampanga - Mabalacat City</item>
-        <item>Pampanga - San Fernando</item><item>Tarlac - Tarlac City</item><item>Zambales - Olongapo City</item>
-        <item>Nueva Ecija - San Jose City</item>
+        <item>Nueva Ecija - Palayan City</item><item>Nueva Ecija - San Jose City</item><item>Pampanga - Angeles City</item>
+        <item>Pampanga - Mabalacat City</item><item>Pampanga - San Fernando</item><item>Tarlac - Tarlac City</item>
+        <item>Tarlac - Capas City</item><item>Zambales - Olongapo City</item><item>Zambales - Iba City</item>
     </string-array>
 
     <!--Array of Province/City in Region 4A-->
     <string-array name="arr_region4A_city">
-        <item>Select Your Province/City</item><item>Cavite</item><item>Laguna</item>
-        <item>Batangas</item><item>Rizal</item><item>Quezon</item>
-        <item>Batangas - Batangas City</item><item>Batangas - Lipa City</item><item>Batangas - Tanauan City</item>
-        <item>Cavite - Bacoor City</item><item>Cavite - Cavite City</item><item>Cavite - Dasmarinas City</item>
-        <item>Cavite - Imus City</item><item>Cavite - Tagaytay City</item><item>Cavite - Trece Martires City</item>
-        <item>Laguna - Binan City</item><item>Laguna - Cabuyao City</item><item>Laguna - San Pablo City</item>
+        <item>Select Your Province/City</item><item>Batangas - Batangas City</item><item>Batangas - Lipa City</item>
+        <item>Batangas - Tanauan City</item><item>Cavite - Bacoor City</item><item>Cavite - Cavite City</item>
+        <item>Cavite - Dasmarinas City</item><item>Cavite - Imus City</item><item>Cavite - Tagaytay City</item>
+        <item>Cavite - Trece Martires City</item><item>Laguna - Binan City</item><item>Laguna - Cabuyao City</item>
+        <item>Laguna - Calamba City</item><item>Laguna - San Pablo City</item><item>Laguna - Santa Cruz City</item>
         <item>Laguna - Santa Rosa City</item><item>Quezon - Lucena City</item><item>Quezon - Tayabas City</item>
-        <item>Rizal - Antipolo City</item><item>Laguna - Calamba City</item>
+        <item>Quezon - Tiaong City</item><item>Rizal - Antipolo City</item><item>Rizal - Cainta City</item>
     </string-array>
 
     <!--Array of Province/City in Region 4B-->
     <string-array name="arr_MIMAROPA_city">
-        <item>Select Your Province/City</item><item>Occidental Mindoro</item><item>Oriental Mindoro</item>
-        <item>Marinduque</item><item>Romblon</item><item>Palawan</item>
-        <item>Oriental Mindoro - Calapan City</item><item>Palawan - Puerto Prinsesa City</item>
+        <item>Select Your Province/City</item><item>Marinduque - Boac City</item><item>Occidental Mindoro - Mamburao</item>
+        <item>Oriental Mindoro - Calapan City</item><item>Romblon - Romblon City</item><item>Romblon - Odiongan City</item>
+        <item>Palawan - Puerto Prinsesa City</item><item>Brooke's Point City</item>
     </string-array>
 
     <!--Array of Province/City in NCR-->
@@ -80,25 +75,23 @@
 
     <!--Array of Province/City in CAR-->
     <string-array name="arr_CAR_city">
-        <item>Select Your Province/City</item><item>Abra</item><item>Apayao</item>
-        <item>Benguet</item><item>Ifugao</item><item>Kalinga</item>
-        <item>Mountain Province</item><item>Benguet - Baguio City</item><item>Kalinga - Tabuk City</item>
+        <item>Select Your Province/City</item><item>Abra - Bengued</item><item>Apayao - Kabugao City</item>
+        <item>Benguet - Baguio City</item><item>Ifugao - Lagawe City</item><item>Kalinga - Tabuk City</item>
+        <item>Mountain Province - Bontoc</item>
     </string-array>
 
     <!--Array of Province/City in Region V-->
     <string-array name="arr_region5_city">
-        <item>Select Your Province/City</item><item>Albay</item><item>Camarines Norte</item>
-        <item>Camarines Sur</item><item>Sorsogon</item><item>Catanduanes</item>
-        <item>Masbate</item><item>Albay - Legazpi City</item><item>Albay - Ligao City</item>
+        <item>Select Your Province/City</item><item>Albay - Legazpi City</item><item>Albay - Ligao City</item>
         <item>Albay - Tabaco City</item><item>Camarines Sur - Iriga City</item><item>Camarines Sur - Naga City</item>
-        <item>Masbate - Masbate City</item><item>Sorsogon - Sorsogon City</item>
+        <item>Camarines Norte - Daet</item><item>Catanduanes - Virac City</item><item>Masbate - Masbate City</item>
+        <item>Sorsogon - Sorsogon City</item>
     </string-array>
 
     <!--Array of Province/City in Region 6-->
     <string-array name="arr_region6_city">
-        <item>Select Your Province/City</item><item>Aklan</item><item>Antique</item>
-        <item>Negros Occidental</item><item>Capiz</item><item>Guimaras</item>
-        <item>Iloilo</item><item>Capiz - Roxas City</item><item>Iloilo - Iloilo City</item>
+        <item>Select Your Province/City</item><item>Aklan - Kalibo City</item><item>Antique - San Jose City</item>
+        <item>Capiz - Roxas City</item><item>Iloilo - Iloilo City</item>
         <item>Iloilo - Passi City</item><item>Negros Occidental - Bacolod City</item><item>Negros Occidental - Bago City</item>
         <item>Negros Occidental - Cadiz City</item><item>Negros Occidental - Escalante City</item><item>Negros Occidental - Himamayan City</item>
         <item>Negros Occidental - Kabankalan City</item><item>Negros Occidental - La Carlota City</item><item>Negros Occidental - Sagay City</item>
@@ -108,54 +101,62 @@
 
     <!--Array of Province/City in Region 7-->
     <string-array name="arr_region7_city">
-        <item>Select Your Province/City</item><item>Bohol</item><item>Cebu</item>
-        <item>Negros Oriental</item><item>Siquijor</item><item>Bohol - Tagbiliran City</item>
-        <item>Cebu - Bogo City</item><item>Cebu - Carcar City</item><item>Cebu - Cebu City</item>
-        <item>Cebu - Danao City</item><item>Cebu - Lapu-Lapu City</item><item>Cebu - Mandaue City</item>
-        <item>Cebu - Naga City</item><item>Cebu - Talisay City</item><item>Negros Oriental - Bais City</item>
+        <item>Select Your Province/City</item><item>Bohol - Tagbiliran City</item><item>Cebu - Bogo City</item>
+        <item>Cebu - Carcar City</item><item>Cebu - Cebu City</item><item>Cebu - Danao City</item>
+        <item>Cebu - Lapu-Lapu City</item><item>Cebu - Mandaue City</item><item>Cebu - Naga City</item>
+        <item>Cebu - Talisay City</item><item>Cebu - Toledo City</item><item>Negros Oriental - Bais City</item>
         <item>Negros Oriental - Bayawan City</item><item>Negros Oriental - Canlaon City</item><item>Negros Oriental - Dumaguete City</item>
-        <item>Negros Oriental - Guihulngan City</item><item>Negros Oriental - Tanjay City</item><item>Cebu - Toledo City</item>
+        <item>Negros Oriental - Guihulngan City</item><item>Negros Oriental - Tanjay City</item><item>Siquijor - Siquijor City</item>
     </string-array>
 
     <!--Array of Province/City in Region 8-->
     <string-array name="arr_region8_city">
-        <item>Select Your Province/City</item><item>Biliran</item><item>Eastern Samar</item>
-        <item>Northern Samar</item><item>Samar</item><item>Southern Leyte</item>
-        <item>Ormoc City</item><item>Tacloban</item><item>Eastern Samar - Borongan City</item>
+        <item>Select Your Province/City</item><item>Biliran - Naval City</item><item>Eastern Samar - Borongan City</item>
         <item>Leyte - Baybay City</item><item>Leyte - Ormoc City</item><item>Leyte - Tacloban City</item>
-        <item>Samar - Calbayog City</item><item>Samar - Catbalogan City</item><item>Southern Leyte - Maasin City</item>
+        <item>Northern Samar - Catbalogan City</item><item>Samar - Calbayog City</item><item>Southern Leyte - Maasin City</item>
     </string-array>
 
     <!--Array of Province/City in Region 9-->
     <string-array name="arr_region9_city">
-        <item>Select Your Province/City</item><item>Zamboanga del Norte</item><item>Zamboanga del Sur</item>
-        <item>Zamboanga Sibugay</item><item>Basilan</item><item>Basilan - Isabela City</item>
-        <item>Zamboanga del Norte - Dapitan City</item><item>Zamboanga del Norte - Dipologi City</item><item>Zamboanga del Sur - Pagadian City</item>
-        <item>Zamboanga del Sur - Zamboanga City</item>
+        <item>Select Your Province/City</item><item>Basilan - Isabela City</item><item>Zamboanga del Norte - Dapitan City</item>
+        <item>Zamboanga del Norte - Dipolog City</item><item>Zamboanga del Sur - Pagadian City</item><item>Zamboanga del Sur - Molave City</item>
+        <item>Zamboanga del Sur - Zamboanga City</item><item>Zamboanga Sibugay - Ipil City</item><item>Zamboanga Sibugay - Tungawan</item>
     </string-array>
-
-
 
 
     <!--Array of Province/City in Region 10-->
     <string-array name="arr_region10_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Bukidnon - Malaybalay City</item><item>Bukidnon - Valencia City</item>
+        <item>Camiguin - Mambajao City</item><item>Lanao del Norte - Iligan City</item><item>Lanao del Norte - Tubod City</item>
+        <item>Misamis Occidental - Oroquieta City</item><item>Misamis Occidental - Ozamiz City</item><item>Misamis Occidental - Tangub City</item>
+        <item>Misamis Oriental - Cagayan de Oro City</item><item>Misamis Oriental - El Salvador City</item><item>Misamis Oriental - Gingoog City</item>
     </string-array>
+
     <!--Array of Province/City in Region 11-->
     <string-array name="arr_region11_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Davao del Norte - Panabo City</item><item>Davao del Norte - Samal City</item>
+        <item>Davao del Norte - Tagum City</item><item>Davao del Sur - Davao City</item><item>Davao del Sur - Digos City</item>
+        <item>Davao Oriental - Mati City</item>
     </string-array>
+
     <!--Array of Province/City in Region 12-->
     <string-array name="arr_region12_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>North Cotabato - Kidapawan City</item><item>General Santos - General Santos City</item>
+        <item>Maguindanao - Cotabato City</item><item>South Cotabato - Koronadal City</item><item>South Cotabato - Tupi City</item>
+        <item>Sultan Kudarat - Tacurong City</item><item>Sarangani - Alabel City</item>
     </string-array>
+
     <!--Array of Province/City in Region 13-->
     <string-array name="arr_region13_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Agusan del Norte - Butuan City</item><item>Agusan del Norte - Cabadbaran City</item>
+        <item>Agusan del Sur - Bayugan City</item><item>Agusan del Sur - Prosperidad City</item><item>Surigao del Norte - Surigao City</item>
+        <item>Surigao del Sur - Bislig City</item><item>Surigao del Sur - Tandag City</item><item>Dinagat Islands - San Jose City</item>
     </string-array>
+
     <!--Array of Province/City in BARRM-->
     <string-array name="arr_BARRM_city">
-        <item>Select Your Province/City</item><item>Ilocos Norte</item><item>Ilocos Sur</item><item>La Union</item><item>Pangasinan</item>
+        <item>Select Your Province/City</item><item>Basilan - Lamitan City</item><item>Lanao del Sur - Marawi City</item>
+        <item>Maguindanao - Shariff Aguak City</item><item>Sulu - Jolo City</item><item>Tawi-Tawi - Bongao City</item>
     </string-array>
 
 </resources>

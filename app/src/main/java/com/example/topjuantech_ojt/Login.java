@@ -128,7 +128,7 @@ public class Login extends AppCompatActivity {
                     finish();
                 }
                 if(documentSnapshot.getString("isAdmin")!= null){
-                    startActivity(new Intent(getApplicationContext(),AdminDashboard.class));
+                    startActivity(new Intent(getApplicationContext(),RegistrationEstablishment.class));
                     finish();
                 }
             }

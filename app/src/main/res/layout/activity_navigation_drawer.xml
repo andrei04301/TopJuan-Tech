@@ -29,7 +29,7 @@
         android:layout_gravity="start"
         android:id="@+id/navView"
         android:fitsSystemWindows="true"
-        app:menu="@menu/menu"
+        app:menu="@menu/admin_menu"
         app:headerLayout="@layout/header"
         android:background="@color/powder_blue"
         app:itemTextColor="@color/black"/>

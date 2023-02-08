@@ -122,7 +122,6 @@ public class Login extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 Log.d("TAG","onSuccess: " + documentSnapshot.getData());
-
                 if(documentSnapshot.getString("isUser")!= null){
                     startActivity(new Intent(getApplicationContext(),UserDashboard.class));
                     finish();

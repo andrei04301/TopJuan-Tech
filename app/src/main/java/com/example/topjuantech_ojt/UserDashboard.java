@@ -27,7 +27,6 @@ public class UserDashboard extends NavigationDrawer {
         super.onCreate(savedInstanceState);
         LayoutInflater inflater = LayoutInflater.from(this);
         View v = inflater.inflate(R.layout.activity_user_dashboard, null, false);
-
         drawer.addView(v, 0);
         // creating object of ViewPager
         ViewPager mViewPager;

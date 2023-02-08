@@ -15,10 +15,10 @@ import android.widget.Toast;
 public class LocationInput extends AppCompatActivity {
 
     private String  chosenCity, chosenRegion;
-    private TextView txtRegion, txtCity;
+    private TextView txtRegion, txtCity, txtBarangay, txtLong, txttLat;
     private Spinner  spinCity, spinRegion;
     private ArrayAdapter<CharSequence>  adapterCity, adapterRegion;
-    private EditText etBarangay, etLong, etLat;
+//    private EditText etBarangay, etLong, etLat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -138,6 +138,7 @@ public class LocationInput extends AppCompatActivity {
         submitButton = findViewById(R.id.button_submit);
         txtRegion = findViewById(R.id.txt_region);
         txtCity = findViewById(R.id.txt_district);
+//        txtBarangay = findViewById(R.id.txt);
 
         submitButton.setOnClickListener(v -> {
             if (chosenRegion.equals("Select Your Region")) {

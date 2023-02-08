@@ -138,7 +138,6 @@ public class RegistrationEstablishment extends AppCompatActivity {
                         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                             chosenCity = spinCity.getSelectedItem().toString();
                         }
-
                         @Override
                         public void onNothingSelected(AdapterView<?> parent) {
                         }
@@ -159,7 +158,6 @@ public class RegistrationEstablishment extends AppCompatActivity {
             }
         });
     }
-
     private void PerformAuth() {
         estName =findViewById(R.id.editNameEst);
         estType =findViewById(R.id.editTypeEst);

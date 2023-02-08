@@ -84,12 +84,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/editFirstNameManager"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/custom_textfield"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:hint="Last Name"
                     android:paddingLeft="20dp"
@@ -97,55 +95,51 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    android:textColorHint="@color/black" />
 
                 <EditText
                     android:id="@+id/editEmailManager"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/editLastNameManager"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/custom_textfield"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:hint="Email"
-                    android:inputType="textEmailAddress"
                     android:paddingLeft="20dp"
                     android:paddingTop="13dp"
                     android:paddingRight="20dp"
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
+                    android:textColorHint="@color/black" />
 
                 <com.hbb20.CountryCodePicker
                     android:id="@+id/ccp"
-                    android:layout_width="130dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="290dp"
-                    android:layout_marginBottom="8dp"
+                    android:gravity="center_vertical"
                     android:paddingBottom="13dp"
                     tools:ignore="MissingClass" />
 
 
                 <EditText
                     android:id="@+id/editCellphoneManager"
-                    android:layout_width="175dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="160dp"
                     android:layout_marginTop="290dp"
+                    android:layout_marginRight="22dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/custom_textfield"
                     android:drawablePadding="10dp"
                     android:ems="10"
+                    android:gravity="center_vertical"
                     android:hint="Phone Number"
                     android:inputType="phone"
                     android:paddingLeft="20dp"
@@ -155,20 +149,19 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/editPassword1Manager"
-                    app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/ccp"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
                     android:id="@+id/editPassword1Manager"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="350dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_below="@+id/editEmailManager"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/custom_textfield"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:hint="Password"
                     android:inputType="textPassword"
@@ -177,21 +170,19 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/editPassword2Manager"
-                    app:layout_constraintEnd_toEndOf="@+id/editCellphoneManager"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editCellphoneManager"
-                    tools:ignore="MissingConstraints" />
+                    android:textColorHint="@color/black">
+
+                </EditText>
 
                 <EditText
                     android:id="@+id/editPassword2Manager"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="410dp"
+                    android:layout_below="@+id/editPassword1Manager"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/custom_textfield"
-                    android:drawablePadding="10dp"
                     android:ems="10"
                     android:hint="Confirm Password"
                     android:inputType="textPassword"
@@ -200,40 +191,40 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:layout_constraintEnd_toEndOf="@+id/editPassword1Manager"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editPassword1Manager"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="479dp" />
-
-                <TextView
-                    android:id="@+id/alreadyHaveAccount"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="130dp"
-                    android:layout_marginTop="520dp"
-                    android:gravity="center"
-                    android:text="Already Have an Account?"
-                    android:textColor="@color/black"
-                    android:textSize="17sp"
-
-                    app:layout_constraintEnd_toEndOf="@+id/btnContinueManager"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteY="611dp" />
+                    android:textColorHint="@color/black" />
 
                 <Button
                     android:id="@+id/btnContinueManager"
                     android:layout_width="296dp"
                     android:layout_height="45dp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginLeft="35dp"
-                    android:layout_marginTop="470dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginStart="40dp"
                     android:background="@drawable/cust_but"
                     android:text="Continue"
                     android:textColor="@color/white"
                     tools:ignore="MissingConstraints"
                     tools:layout_editor_absoluteX="57dp"
-                    tools:layout_editor_absoluteY="566dp" />
+                    tools:layout_editor_absoluteY="566dp"
+                    android:layout_below="@+id/editPassword2Manager"
+                    />
+                <TextView
+                    android:id="@+id/alreadyHaveAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="5dpdp"
+                    android:gravity="center"
+                    android:text="Already Have an Account?"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    app:layout_constraintEnd_toEndOf="@+id/btnContinueManager"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteY="611dp"
+                    android:layout_below="@+id/btnContinueManager"
+                    />
             </RelativeLayout>
         </ScrollView>
     </androidx.cardview.widget.CardView>

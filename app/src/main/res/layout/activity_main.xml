@@ -24,30 +24,32 @@
             android:gravity="center"
             android:src="@drawable/logo"
             android:adjustViewBounds="true" />
-        <Button
-            android:id="@+id/btn_signupManager"
-            android:layout_width="290dp"
-            android:layout_height="55dp"
-            android:layout_marginLeft="55dp"
-            android:layout_marginTop="140dp"
-            android:background="@drawable/cust_but"
-            android:fontFamily="@font/poppins"
-            android:text="Register as Manager"
-            android:textColor="@color/white"
-            android:layout_below="@id/applogo"
-            android:layout_centerHorizontal="true"/>
+
         <Button
             android:id="@+id/btn_signupUser"
             android:layout_width="290dp"
             android:layout_height="55dp"
+            android:layout_below="@id/applogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/cust_but"
+            android:fontFamily="@font/poppins"
+            android:text="Register as User"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_signupManager"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_below="@id/btn_signupUser"
+            android:layout_centerHorizontal="true"
             android:layout_marginLeft="55dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/cust_but"
             android:fontFamily="@font/poppins"
-            android:text="Register as User"
-            android:textColor="@color/white"
-            android:layout_below="@id/btn_signupManager"
-            android:layout_centerHorizontal="true"/>
+            android:text="Register as Manager"
+            android:textColor="@color/white" />
         <Button
             android:id="@+id/btn_login"
             android:layout_width="290dp"
@@ -59,7 +61,7 @@
             android:fontFamily="@font/poppins"
             android:text="Login"
             android:textColor="@color/white"
-            android:layout_below="@id/btn_signupUser"
+            android:layout_below="@id/btn_signupManager"
             android:layout_centerHorizontal="true"/>
     </RelativeLayout>
 </RelativeLayout>

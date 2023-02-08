@@ -175,7 +175,17 @@ public class RegistrationEstablishment extends AppCompatActivity {
         barangay = txtBarangay.getText().toString();
         longi = txtLong.getText().toString();
         lat = txtLat.getText().toString();
-        if (chosenRegion.equals("Select Your Region")) {
+
+         if (establishment.isEmpty()) {
+             Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment Name", Toast.LENGTH_LONG).show();
+             estName.setError("Establishment Name is required!");
+         } else if (type.isEmpty()) {
+             Toast.makeText(RegistrationEstablishment.this, "Please input the type of your Establishment", Toast.LENGTH_LONG).show();
+             estType.setError("Type is required!");
+         } else if (contact.isEmpty()) {
+             Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment's Contact Number", Toast.LENGTH_LONG).show();
+             txtLong.setError("Contact Number is required!");
+         }else if (chosenRegion.equals("Select Your Region")) {
             Toast.makeText(RegistrationEstablishment.this, "Please select your Region from the list", Toast.LENGTH_LONG).show();
             txtRegion.setError("Region is required");      //To set error on TextView
         } else if (chosenCity.equals("Select Your Province/City")) {
@@ -191,29 +201,20 @@ public class RegistrationEstablishment extends AppCompatActivity {
         } else if (lat.isEmpty()) {
             Toast.makeText(RegistrationEstablishment.this, "Please input the Latitude of the Establishment", Toast.LENGTH_LONG).show();
             txtLat.setError("Latitude is required!");
-        } else if (establishment.isEmpty()) {
-            Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment Name", Toast.LENGTH_LONG).show();
-            estName.setError("Establishment Name is required!");
-        } else if (type.isEmpty()) {
-            Toast.makeText(RegistrationEstablishment.this, "Please input the type of your Establishment", Toast.LENGTH_LONG).show();
-            estType.setError("Type is required!");
-        } else if (contact.isEmpty()) {
-            Toast.makeText(RegistrationEstablishment.this, "Please input your Establishment's Contact Number", Toast.LENGTH_LONG).show();
-            txtLong.setError("Contact Number is required!");
         } else {
-//            estName.setError(null);
-//            estType.setError(null);
-//            estContact.setError(null);
+            estName.setError(null);
+            estType.setError(null);
+            estContact.setError(null);
             txtRegion.setError(null);
             txtCity.setError(null);
-//            txtBarangay.setError(null);
-//            txtLong.setError(null);
-//            txtLat.setError(null);
+            txtBarangay.setError(null);
+            txtLong.setError(null);
+            txtLat.setError(null);
             Toast.makeText(RegistrationEstablishment.this, "Selected Region: " + chosenRegion + "\nSelected Province/City: " + chosenCity, Toast.LENGTH_LONG).show();
-//            progressDialog.setMessage("Please wait...");
-//            progressDialog.setTitle("Registration");
-//            progressDialog.setCanceledOnTouchOutside(false);
-//            progressDialog.show();
+            progressDialog.setMessage("Please wait...");
+            progressDialog.setTitle("Registration");
+            progressDialog.setCanceledOnTouchOutside(false);
+            progressDialog.show();
 
         }
 

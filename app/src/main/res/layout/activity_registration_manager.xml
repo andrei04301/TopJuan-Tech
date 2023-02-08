@@ -6,73 +6,69 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationManager"
     android:background="@color/white">
-
     <View
         android:id="@+id/topView"
-        android:layout_width="0dp"
-        android:layout_height="27dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
         android:background="@color/powder_blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/view3"
-        android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
         android:background="@drawable/wave1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/topView" />
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="-90dp"
         android:background="@color/white"
         app:cardCornerRadius="30dp"
         app:cardElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
+
             <RelativeLayout
                 android:id="@+id/rl_wrapper"
-                android:visibility="visible"
                 android:layout_width="match_parent"
                 android:layout_height="565dp"
                 android:fillViewport="true"
+                android:visibility="visible"
                 tools:layout_editor_absoluteX="26dp"
                 tools:layout_editor_absoluteY="-26dp">
-
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="100dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/poppins"
                     android:text="Register"
                     android:textColor="@color/bright_blue"
-                    android:textSize="44sp"
-                    app:layout_constraintBottom_toTopOf="@+id/editFirstNameManager"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0" />
+                    android:textSize="44sp" />
 
                 <EditText
                     android:id="@+id/editFirstNameManager"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="110dp"
+                    android:layout_below="@id/textView"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
                     android:background="@drawable/custom_textfield"
                     android:ems="10"
                     android:hint="First Name"
@@ -81,21 +77,16 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/editLastNameManager"
-                    app:layout_constraintEnd_toEndOf="@+id/editLastNameManager"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editLastNameManager"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.964"
-                    tools:ignore="MissingConstraints" />
+                    android:textColorHint="@color/black" />
 
                 <EditText
                     android:id="@+id/editLastNameManager"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="170dp"
+                    android:layout_below="@+id/editFirstNameManager"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginBottom="4dp"
                     android:background="@drawable/custom_textfield"
                     android:drawablePadding="10dp"
@@ -107,18 +98,17 @@
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/editEmailManager"
-                    app:layout_constraintEnd_toEndOf="@+id/editEmailManager"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editEmailManager"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 
                 <EditText
                     android:id="@+id/editEmailManager"
-                    android:layout_width="300dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginTop="230dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
                     android:layout_marginBottom="8dp"
                     android:background="@drawable/custom_textfield"
                     android:drawablePadding="10dp"
@@ -131,9 +121,7 @@
                     android:paddingBottom="13dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/black"
-                    app:layout_constraintBottom_toTopOf="@+id/editCellphoneManager"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.495"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 

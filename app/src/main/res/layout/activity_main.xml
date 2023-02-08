@@ -32,7 +32,7 @@
             android:layout_below="@id/applogo"
             android:layout_centerHorizontal="true"
             android:layout_marginLeft="55dp"
-            android:layout_marginTop="140dp"
+            android:layout_marginTop="200dp"
             android:background="@drawable/cust_but"
             android:fontFamily="@font/poppins"
             android:text="Register as User"

@@ -31,6 +31,7 @@ import java.util.concurrent.TimeUnit;
 import in.aabhasjindal.otptextview.OtpTextView;
 
 public class RegistrationManager extends AppCompatActivity {
+    //variables creation & initialization
     //    CountryCodePicker ccp;
     private EditText managerNameEditText, managerLastEditText,
             managerEmailEditText, managerPhoneEditText,
@@ -43,23 +44,22 @@ public class RegistrationManager extends AppCompatActivity {
 //    Context context;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     //    String phonePattern = "^(09|\\+639)\\d{9}$";
-    FirebaseAuth mAuth;
-    FirebaseUser mUser;
-    ProgressDialog progressDialog;
-    FirebaseFirestore fStore;
-    //    FirebaseAuth mAuth;
+    FirebaseAuth mAuth; //Firebase Auth Integration
+    FirebaseUser mUser; //Firebase User Integration
+    ProgressDialog progressDialog; //Progress Dialog Initialization
+    FirebaseFirestore fStore; //Firestore Initialization
     DatabaseReference database = FirebaseDatabase.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_manager);
-
+        //Instantiation
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         fStore=FirebaseFirestore.getInstance();
-
+        //methods to find ids
         managerNameEditText = findViewById(R.id.editFirstNameManager);
         managerLastEditText = findViewById(R.id.editLastNameManager);
         managerEmailEditText = findViewById(R.id.editEmailManager);
@@ -98,7 +98,8 @@ public class RegistrationManager extends AppCompatActivity {
         });
     }
 
-    private void PerformAuth() {
+    private void PerformAuth() { //performauth method - function
+        //getText in string format from edittext
 //        String phoneCode = editPhoneCode.getText().toString();
         phone = managerPhoneEditText.getText().toString();
         firstName = managerNameEditText.getText().toString();
@@ -107,6 +108,7 @@ public class RegistrationManager extends AppCompatActivity {
         password = managerPasswordEditText.getText().toString();
         confirmPassword = managerConfirmPasswordEditText.getText().toString();
 
+        //fields validation
         if (firstName.isEmpty()) {
             managerNameEditText.setError("Please fill all fields");
         } else if (lastName.isEmpty()) {
@@ -126,9 +128,11 @@ public class RegistrationManager extends AppCompatActivity {
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+            //registration of user using credentials to be stored in db authentication
             mAuth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    //storing of user data to firestore
                     if (task.isSuccessful()) {
                         FirebaseUser user = mAuth.getCurrentUser();
                         progressDialog.dismiss();
@@ -147,7 +151,7 @@ public class RegistrationManager extends AppCompatActivity {
                         Toast.makeText(RegistrationManager.this, "" + task.getException(), Toast.LENGTH_LONG).show();
                     }
                 }
-
+                //page redirection method
                 private void sendUserToNextActivity() {
                     Intent i = new Intent(RegistrationManager.this, AdminDashboard.class);
                     i.setFlags((i.FLAG_ACTIVITY_CLEAR_TASK | i.FLAG_ACTIVITY_NEW_TASK));

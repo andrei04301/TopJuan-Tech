@@ -26,6 +26,7 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 //import com.example.topjuantech_ojt.databinding.ActivityLoginBinding;
 public class Login extends AppCompatActivity {
+    //Variable creation and Initialization
     private TextView forgotPassword, createNewAccount;
     private EditText firstNameEditText, lastNameEditText,
             emailEditText, phoneEditText, passwordEditText,
@@ -36,10 +37,10 @@ public class Login extends AppCompatActivity {
     Context context;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     String phonePattern = "^(09|\\+639)\\d{9}$";
-    FirebaseAuth mAuth;
-    FirebaseUser mUser;
-    FirebaseFirestore fStore;
-    ProgressDialog progressDialog;
+    FirebaseAuth mAuth; //FirebaseAuth Integration
+    FirebaseUser mUser; //FIrebaseUser Integration
+    FirebaseFirestore fStore; //Firestore Integration
+    ProgressDialog progressDialog; //ProgressDialog Initialization
     Button btnLogin;
 //    private ActivityLoginBinding binding;
 
@@ -47,15 +48,16 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        btnLogin = findViewById(R.id.btnLogin);
-        progressDialog = new ProgressDialog(this);
-        mAuth = FirebaseAuth.getInstance();
-        mUser = mAuth.getCurrentUser();
+        //method to find ids
         editTextEmailAdd = findViewById(R.id.editTextEmailAdd);
         editTextPassword = findViewById(R.id.editTextPassword);
+        btnLogin = findViewById(R.id.btnLogin);
+        //Instantiation
         mAuth = FirebaseAuth.getInstance();
-        mUser = mAuth.getCurrentUser();
         fStore=FirebaseFirestore.getInstance();
+        mUser = mAuth.getCurrentUser();
+        progressDialog = new ProgressDialog(this);
+
 
 
         forgotPassword = findViewById(R.id.forgotPassword);
@@ -82,11 +84,13 @@ public class Login extends AppCompatActivity {
             }
         });
     }
-
+    //Perform login method - function
     private void performLogin() {
+        //get text in string format
         email = editTextEmailAdd.getText().toString();
         password = editTextPassword.getText().toString();
 
+        //fields validation
         if (!email.matches(emailPattern)) {
             editTextEmailAdd.setError("Enter correct Email!");
 //        } else if (!email.matches(phonePattern)) {
@@ -99,6 +103,7 @@ public class Login extends AppCompatActivity {
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+            //Signing In w the users credentials
             mAuth.signInWithEmailAndPassword(email, password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
                 public void onSuccess(AuthResult authResult) {
@@ -115,7 +120,8 @@ public class Login extends AppCompatActivity {
             });
         }
     }
-
+    //checkUserAccessLevel method
+    //determining if user or admin
     private void checkUserAccessLevel(String uid) {
         DocumentReference df=fStore.collection("Users").document(uid);
         df.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

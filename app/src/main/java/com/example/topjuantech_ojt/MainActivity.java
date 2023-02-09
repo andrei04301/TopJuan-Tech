@@ -9,16 +9,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    //vars declaration
     private Button btn_login, btn_signupUser, btn_signupManager;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //methods to find id
         btn_login = (Button) findViewById(R.id.btn_login);
         btn_signupUser = (Button) findViewById(R.id.btn_signupUser);
         btn_signupManager = (Button) findViewById(R.id.btn_signupManager);
 
+
+        //button onTouch or redirection
         btn_signupUser.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {

@@ -26,6 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistrationUser extends AppCompatActivity {
+    //  variable creation & initialization
     private EditText firstNameEditText, lastNameEditText,
             emailEditText, phoneEditText, passwordEditText,
             confirmPasswordEditText,editPhoneCode;
@@ -34,10 +35,10 @@ public class RegistrationUser extends AppCompatActivity {
 
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     //    String phonePattern="^(09|\\+639)\\d{9}$";
-    FirebaseAuth mAuth;
-    FirebaseUser mUser;
-    ProgressDialog progressDialog;
-    FirebaseFirestore fStore;
+    FirebaseAuth mAuth; //Firebase Authentication Integration
+    FirebaseUser mUser; //Firebase User Integration
+    ProgressDialog progressDialog; //Progress bar Initialization
+    FirebaseFirestore fStore; //Firebase Firestore Integration
 
 
     @Override
@@ -45,8 +46,8 @@ public class RegistrationUser extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration_user);
 
-        fStore=FirebaseFirestore.getInstance();
-
+        fStore=FirebaseFirestore.getInstance(); //Firestore Instantiation
+        //Method to find find ids
         firstNameEditText =  findViewById(R.id.editFirstName);
         lastNameEditText =  findViewById(R.id.editLastName);
         emailEditText =  findViewById(R.id.editEmail);
@@ -57,12 +58,12 @@ public class RegistrationUser extends AppCompatActivity {
         Button signupButton = findViewById(R.id.btnSignup);
         alreadyHaveAccount=findViewById(R.id.alreadyHaveAccount);
 
-        progressDialog=new ProgressDialog(this);
+        progressDialog=new ProgressDialog(this); //Progress Dialog Instantiation
 
-        mAuth=FirebaseAuth.getInstance();
-        mUser=mAuth.getCurrentUser();
+        mAuth=FirebaseAuth.getInstance(); //Firebase Auth Instantiation
+        mUser=mAuth.getCurrentUser(); //retrieves data of the current user
 
-
+        //clickable textview redirection
         alreadyHaveAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +78,9 @@ public class RegistrationUser extends AppCompatActivity {
             }
         });
     }
+    //PerformAuth method - Function
     private void PerformAuth() {
+        //getText in string format from editText
 //        String phoneCode = editPhoneCode.getText().toString();
         String phoneNumber = phoneEditText.getText().toString();
         firstName = firstNameEditText.getText().toString();
@@ -87,6 +90,7 @@ public class RegistrationUser extends AppCompatActivity {
         password = passwordEditText.getText().toString();
         confirmPassword = confirmPasswordEditText.getText().toString();
 
+        //Fields validation
         if(firstName.isEmpty()){
             firstNameEditText.setError("Please fill all fields");
         }else if(lastName.isEmpty()){
@@ -105,9 +109,11 @@ public class RegistrationUser extends AppCompatActivity {
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
+            //registration of user using credentials to be stored in db authentication
             mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
+                    //storing of user data to firestore
                     if (task.isSuccessful()){
                         FirebaseUser user=mAuth.getCurrentUser();
                         progressDialog.dismiss();
@@ -126,7 +132,7 @@ public class RegistrationUser extends AppCompatActivity {
                         Toast.makeText(RegistrationUser.this, ""+task.getException(), Toast.LENGTH_LONG).show();
                     }
                 }
-
+                //redirection method
                 private void sendUserToNextActivity() {
                     Intent i = new Intent(RegistrationUser.this, UserDashboard.class );
                     i.setFlags((i.FLAG_ACTIVITY_CLEAR_TASK|i.FLAG_ACTIVITY_NEW_TASK));

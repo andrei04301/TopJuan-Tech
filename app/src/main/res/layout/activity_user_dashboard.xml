@@ -49,13 +49,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_1"
+                        android:id="@+id/icon1"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/amusement" />
 
                     <TextView
-                        android:id="@+id/icon_1_label"
+                        android:id="@+id/icon1_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Amusement"
@@ -72,13 +72,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_2"
+                        android:id="@+id/icon2"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/bank" />
 
                     <TextView
-                        android:id="@+id/icon_2_label"
+                        android:id="@+id/icon2_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Banks"
@@ -93,13 +93,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_3"
+                        android:id="@+id/icon3"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/coffee" />
 
                     <TextView
-                        android:id="@+id/icon_3_label"
+                        android:id="@+id/icon3_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Beverages"
@@ -114,13 +114,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_4"
+                        android:id="@+id/icon4"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/food" />
 
                     <TextView
-                        android:id="@+id/icon_4_label"
+                        android:id="@+id/icon4_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Food Spots"
@@ -135,14 +135,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_5"
+                        android:id="@+id/icon5"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/gas"
                         />
 
                     <TextView
-                        android:id="@+id/icon_5_label"
+                        android:id="@+id/icon5_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Gas Stations"
@@ -157,13 +157,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_6"
+                        android:id="@+id/icon6"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/government" />
 
                     <TextView
-                        android:id="@+id/icon_6_label"
+                        android:id="@+id/icon6_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Government"
@@ -178,14 +178,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_7"
+                        android:id="@+id/icon7"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/hospital"
                         android:textColor="@color/black"/>
 
                     <TextView
-                        android:id="@+id/icon_7_label"
+                        android:id="@+id/icon7_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hospitals"
@@ -200,13 +200,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_8"
+                        android:id="@+id/icon8"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/hotel" />
 
                     <TextView
-                        android:id="@+id/icon_8_label"
+                        android:id="@+id/icon8_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Hotels"
@@ -221,13 +221,13 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/icon_9"
+                        android:id="@+id/icon9"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/tourist" />
 
                     <TextView
-                        android:id="@+id/icon_9_label"
+                        android:id="@+id/icon9_label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Attractions"

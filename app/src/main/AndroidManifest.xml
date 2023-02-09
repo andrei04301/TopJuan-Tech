@@ -14,12 +14,38 @@
         android:theme="@style/Theme.TopJuanTech_OJT"
         tools:targetApi="31">
         <activity
+            android:name=".CategoryAttractions"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryHotels"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryHospitals"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryGovernment"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryGasStations"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryFoodSpots"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryBeverages"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryBanks"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryAmusement"
+            android:exported="false" />
+        <activity
             android:name=".AdminNavigation"
             android:exported="false" />
         <activity
             android:name=".City"
             android:exported="false" />
-
         <activity
             android:name=".SliderAdapter"
             android:exported="false" />
